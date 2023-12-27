@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-kay-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "author": "K <liukai@tj-it.com.cn>",
+  "license": "ISC",
+  "packageManager": "pnpm@7.18.0",
+  "scripts": {
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish",
+    "test": "pnpm -r run test",
+    "postinstall": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "node scripts/verifyCommit.mjs"
+  },
+  "devDependencies": {
+    "bumpp": "^8.2.1",
+    "chalk": "^5.3.0",
+    "eslint": "^8.54.0",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^4.9.5"
+  }
+}

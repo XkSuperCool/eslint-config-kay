@@ -1,0 +1,28 @@
+{
+  "name": "eslint-plugin-kay",
+  "version": "1.0.0",
+  "author": "K <liukai@tj-it.com.cn>",
+  "license": "ISC",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && unbuild",
+    "stub": "unbuild --stub",
+    "test": "vitest",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@typescript-eslint/types": "^6.12.0",
+    "@typescript-eslint/utils": "^5.62.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.2.1",
+    "vitest": "^0.31.4"
+  }
+}

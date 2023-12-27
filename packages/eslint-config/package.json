@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-kay",
+  "version": "1.0.0",
+  "author": "K <liukai@tj-it.com.cn>",
+  "license": "ISC",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "eslint-config-kay-basic": "workspace:*",
+    "eslint-config-kay-ts": "workspace:*",
+    "eslint-plugin-vue": "^9.18.1",
+    "local-pkg": "^0.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  }
+}

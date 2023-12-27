@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-kay-basic",
+  "version": "1.0.0",
+  "author": "K <liukai@tj-it.com.cn>",
+  "license": "ISC",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {},
+  "keywords": [],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-kay": "workspace:*",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  }
+}
